@@ -1,0 +1,5 @@
+java-jdk-1.8:
+-------------
+c:../jdk/bin/keytool -genkeypair -keystore <path_to_store_keystore.jks> -keypass password -storepass password
+-keyalg RSA -sigalg SHA1withRSA -keysize 1024 -alias mule -ext SAN=DNS:localhost,IP:127.0.0.1
+-validity 9999
